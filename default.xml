@@ -212,7 +212,6 @@
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" />
@@ -311,4 +310,5 @@
   <project path="vendor/tg" name="tg-endeavoru-jellybean/android_vendor_tg" remote="github" revision="jb"/>
   <project path="device/htc/endeavoru" name="tg-endeavoru-jellybean/android_device_htc_endeavoru" remote="github" revision="jb"/>
   <project path="vendor/htc/endeavoru" name="tg-endeavoru-jellybean/android_vendor_htc_endeavoru" remote="github" revision="jb"/>
+  <project path="hardware/ti/wlan" name="tg-endeavoru-jellybean/android_hardware_ti_wlan" remote="github" revision="jb" />
 </manifest>
