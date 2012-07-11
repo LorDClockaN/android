@@ -7,6 +7,8 @@
   <default revision="refs/tags/android-4.1.1_r1"
            remote="aosp"
            sync-j="4" />
+  <remote  name="github"
+           fetch="git://github.com/" />
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -177,7 +179,6 @@
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
@@ -205,7 +206,6 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
@@ -303,6 +303,12 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
-  <project path="system/vold" name="platform/system/vold" />
 
+  <!-- Begin tg_jellybean's repos -->
+  <project path="external/wpa_supplicant_8" name="tg-endeavoru-jellybean/android_external_wpa_supplicant_8" remote="github" revision="jb" />
+  <project path="system/vold" name="tg-endeavoru-jellybean/android_system_vold" remote="github" revision="jb"/>
+  <project path="hardware/libhardware_legacy" name="tg-endeavoru-jellybean/android_hardware_libhardware_legacy" remote="github" revision="jb"/>
+  <project path="vendor/tg" name="tg-endeavoru-jellybean/android_vendor_tg" remote="github" revision="jb"/>
+  <project path="device/htc/endeavoru" name="tg-endeavoru-jellybean/android_device_htc_endeavoru" remote="github" revision="jb"/>
+  <project path="vendor/htc/endeavoru" name="tg-endeavoru-jellybean/android_vendor_htc_endeavoru" remote="github" revision="jb"/>
 </manifest>
