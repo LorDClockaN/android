@@ -4,7 +4,7 @@ Building tg_jellybean
 1) Initialize (or re-initialize) your aosp repository to use the 
 tg_jellybean manifest.
 
-    repo init -u https://github.com/tg-endeavoru-jellybean/android.git -b jb
+    repo init -u https://github.com/tg-endeavoru-jellybean/android.git
 
 note: you should be safe to initialize over any aosp repository, however this 
 will overwrite some of the aosp repos, and shouldn't be done if you're
